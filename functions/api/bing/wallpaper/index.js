@@ -12,7 +12,7 @@ export async function onRequest(context) {
     const bing_data = await res.json();
     const return_data={
         "status":true,
-        "message":"操作成功",
+        "message":"Operasi berhasil",
         "data": bing_data.images
     }
     const info = JSON.stringify(return_data);
